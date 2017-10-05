@@ -1,0 +1,17 @@
+variable:
+
+<xsl:variable name="url">
+    <i18n:text key="..."/>
+</xsl:variable>
+
+<fo:basic-link external-destination="url('$url')">
+    <i18n:text key="..."/>
+</fo:basic-link>
+
+if-else:
+<xsl:choose>
+    <xsl:when></xsl:when>
+    ...
+    <xsl:when></xsl:when>
+    <xsl:otherwise></xsl:otherwise>
+</xsl:choose>
