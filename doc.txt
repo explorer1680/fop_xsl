@@ -31,3 +31,6 @@ sum function is to calculate the total number inside of the node.
 
 xsl:template example:
 https://stackoverflow.com/questions/4486869/can-one-give-me-the-example-for-mode-of-template-in-xsl
+
+draw a horizontal line:
+<fo:leader leader-pattern="rule" leader-length="100%" rule-style="solid" rule-thickness="1pt"/>
