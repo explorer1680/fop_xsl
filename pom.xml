@@ -28,11 +28,6 @@
 			</exclusions>
 		</dependency>
 
-
-
-
-
-
 		<!-- dependency for logging -->
 		<!-- jcl to slf4j bridge -->
 		<dependency>
@@ -42,11 +37,11 @@
 		</dependency>
 
 		<!-- slf4j api, this jar is implied by others -->
-		<!-- <dependency> -->
-		<!-- <groupId>org.slf4j</groupId> -->
-		<!-- <artifactId>slf4j-api</artifactId> -->
-		<!-- <version>1.7.21</version> -->
-		<!-- </dependency> -->
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-api</artifactId>
+			<version>1.7.21</version>
+		</dependency>
 
 		<!-- slf4j to log4j2 bridge -->
 		<dependency>
@@ -69,6 +64,12 @@
 			<version>2.6.2</version>
 		</dependency>
 
+		<!-- fop -->
+		<dependency>
+			<groupId>org.apache.xmlgraphics</groupId>
+			<artifactId>fop</artifactId>
+			<version>2.2</version>
+		</dependency>
 
 
 	</dependencies>
