@@ -27,3 +27,7 @@ count function is to count the total occurrence of the node.
 
 sum function is to calculate the total number inside of the node.
 <xsl:value-of select="sum(fund_country_allocation_list/long_position/list-item/percentage)"/>
+
+
+xsl:template example:
+https://stackoverflow.com/questions/4486869/can-one-give-me-the-example-for-mode-of-template-in-xsl
