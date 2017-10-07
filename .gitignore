@@ -7,3 +7,5 @@
 .settings/
 *.sublime-workspace
 /target/
+/.DS_Store
+/output/
