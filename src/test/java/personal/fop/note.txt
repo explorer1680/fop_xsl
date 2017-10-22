@@ -1,3 +1,5 @@
+https://netjs.blogspot.ca/2015/07/how-to-create-pdf-from-xml-using-apache-fop.html
+
 you can't reuse:
 new StreamSource(new ClassPathResource("personal/fop/employees.xml").getInputStream())
 it will have following error:
