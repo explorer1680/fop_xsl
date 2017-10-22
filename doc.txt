@@ -34,3 +34,11 @@ https://stackoverflow.com/questions/4486869/can-one-give-me-the-example-for-mode
 
 draw a horizontal line:
 <fo:leader leader-pattern="rule" leader-length="100%" rule-style="solid" rule-thickness="1pt"/>
+
+to make the text align on the bottom
+I have try: display-align="after", but it is not working, maybe it is because it is the first cell in row.
+try this arount:
+<fo:block linefeed-treatment="preserve">
+    <xsl:text>&#x000A;</xsl:text>
+    ...
+</fo:block>
