@@ -1,0 +1,5 @@
+it seems, that for some internal font, it already has normal, bold, italic, bold italic. (it may not true)
+for, the other font, you need to setup in fop.xconf file.
+
+Please note, the
+font-style="italic" or font-weight="bold" don't make font "italic" or "bold" if you don't have font installed and setup.

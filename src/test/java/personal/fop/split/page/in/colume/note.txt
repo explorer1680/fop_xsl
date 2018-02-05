@@ -1,0 +1,21 @@
+you can split the whole page in 3 columns, and fill the content one by one.
+
+<fo:layout-master-set>
+    <fo:simple-page-master ...>
+
+        <fo:region-body ... column-count="3" />
+
+    </fo:simple-page-master>
+</fo:layout-master-set>
+
+you can have 3 column using <fo:table/>, but, you have to define what content is at the beginning of 2nd and 3rd column.
+
+with <fo:region-body ... column-count="3" />
+you don't.
+
+in the <fo:region-body ... column-count="3" /> page, using:
+<fo:block ... span="all"/>
+to write content in span all columns.
+
+https://www.data2type.de/en/xml-xslt-xslfo/xsl-fo/examples-of-application/multi-column-pages-example-25/
+column-gap="4mm"
