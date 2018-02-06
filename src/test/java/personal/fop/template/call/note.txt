@@ -1,0 +1,18 @@
+there are 2 way to define function like process in xslt,
+one is function, another one is template
+
+define template:
+
+<xsl:template name="template_name">
+    <xsl:param name="param_name" />
+        ...
+</xsl:template>
+
+call template:
+
+<xsl:call-template name="template_name">
+    <xsl:with-param name="param_name" select="..." />
+</xsl:call-template>
+
+Note, "select" always try to parse the content as xPath.
+Using select="'abc'" to pass literal info.

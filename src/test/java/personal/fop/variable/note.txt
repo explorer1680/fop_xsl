@@ -1,0 +1,6 @@
+define a variable:
+
+<xsl:variable name="var" select="count(/root/...)" />
+
+to use this variable:
+<... select="$var"/>

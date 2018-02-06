@@ -1,0 +1,2 @@
+Using fo:block-container, you can print content in the specific position of the page.
+but, it seems, that you can't use it with split.page.in.column

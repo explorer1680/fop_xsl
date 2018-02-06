@@ -1,4 +1,4 @@
-package personal.fop;
+package personal.fop.basic;
 
 import java.io.File;
 import java.io.IOException;
@@ -24,15 +24,15 @@ public class FOPTestRun {
 
 	public static void main(String[] args) throws IOException, FOPException, TransformerException {
 
-		File xslFile = new ClassPathResource("personal/fop/template.xsl").getFile();
+		File xslFile = new ClassPathResource("personal/fop/basic/template.xsl").getFile();
 
-		StreamSource xmlSource = new StreamSource(new ClassPathResource("personal/fop/employees.xml").getInputStream());
+		StreamSource xmlSource = new StreamSource(new ClassPathResource("personal/fop/basic/employees.xml").getInputStream());
 
 		FopFactory fopFactory = FopFactory.newInstance(new File(".").toURI());
 
 		FOUserAgent foUserAgent = fopFactory.newFOUserAgent();
 
-		OutputStream out = new FileSystemResource("/Users/Ethan/git/fop_xsl/output/fot_test_run.pdf").getOutputStream();
+		OutputStream out = new FileSystemResource("/Users/echeng/work/test-temp/fop_test_run.pdf").getOutputStream();
 
 		Fop fop = fopFactory.newFop(MimeConstants.MIME_PDF, foUserAgent, out);
 
@@ -46,11 +46,11 @@ public class FOPTestRun {
 		out.close();
 		System.out.println("done");
 
-		OutputStream out2 = new FileSystemResource("/Users/Ethan/git/fop_xsl/output/fop_test_run.fo").getOutputStream();
+		OutputStream out2 = new FileSystemResource("/Users/echeng/work/test-temp/fop_test_run.fo").getOutputStream();
 		Result res2 = new StreamResult(out2);
 //		File xslFile2 = new ClassPathResource("personal/fop/template.xsl").getFile();
 //		Transformer transformer2 = factory.newTransformer(new StreamSource(xslFile2));
-		StreamSource xmlSource2 = new StreamSource(new ClassPathResource("personal/fop/employees.xml").getInputStream());
+		StreamSource xmlSource2 = new StreamSource(new ClassPathResource("personal/fop/basic/employees.xml").getInputStream());
 
 		transformer.transform(xmlSource2, res2);
 		out2.close();
