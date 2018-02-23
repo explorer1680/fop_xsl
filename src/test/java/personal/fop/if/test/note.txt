@@ -1,0 +1,10 @@
+<abc>True</abc>
+<xsl:if test="abc='True'">...job...</xsl:if>
+will do the job
+
+But:
+<abc>True
+</abc>
+will not do the job.
+you have to use:
+<xsl:if test="normalize-space(abc)='True'">...job...</xsl:if>
