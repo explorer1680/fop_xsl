@@ -1,0 +1,24 @@
+<fo:block text-align-last="justify">
+    something here
+    <fo:leader leader-pattern="dots"/>
+    <fo:page-number-citation ref-id="page_id"/>
+</fo:block>
+
+define page_id:
+<fo:block id="page_id">
+    something here
+</fo:block>
+
+actually, it is "block_id" not "page_id" here.
+text-align-last="justify" is very important.
+
+
+to add link to it:
+
+<fo:block text-align-last="justify">
+    <fo:basic-link internal-destination="page_id">
+        something here
+        <fo:leader leader-pattern="dots"/>
+        <fo:page-number-citation ref-id="page_id"/>
+    </fo:basic-link>
+</fo:block>

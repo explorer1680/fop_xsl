@@ -1,3 +1,16 @@
 https://stackoverflow.com/questions/19267255/how-to-show-page-number-n-of-n-using-xslt-in-pdf-report
 
 I think it can also be used in index page.
+
+define:
+<fo:flow flow-name="xsl-region-body">
+... Lots and lots of content here
+
+    <fo:block id="TheVeryLastPage"> ... </fo:block>
+
+</fo:flow>
+
+<fo:block text-align="end">
+Page <fo:page-number/> of
+    <fo:page-number-citation ref-id="TheVeryLastPage"/>
+</fo:block>
