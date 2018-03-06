@@ -1,0 +1,8 @@
+background of the whole page:
+defined in <fo:region-body>
+<fo:region-body region-name="..."
+    background-image="xxx"/>
+
+the background is different from external-graphic.
+it seems, external-graphic can't be over lapped.
+
