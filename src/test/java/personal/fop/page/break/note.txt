@@ -1,5 +1,12 @@
 to break a page, you don't need to using new <fo:simple-page-master>
-you can use page-break-after, page-break-before, page-break-after, page-break-inside.
+you can use page-break-before, page-break-after, page-break-inside.
 please note, they are not tag, they are attribute.
 example:
 <fo:block page-break-after="always">
+
+I think you can use <block> to group multiple paragraph together, and use page-break-inside=avoid to avoid page break between them.
+
+and, you can also use keep-with-previous on following blocks to group multiple block together.
+
+it seems if you put too many together, you will lost some of them.
+http://apache-fop.1065347.n5.nabble.com/keep-with-previous-and-page-break-td8454.html

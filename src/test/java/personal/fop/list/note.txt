@@ -1,3 +1,5 @@
 www.renderx.com/tutorial.html
 
 list is not table, it is also a complex structure in fop.
+
+the bullet symbal is a special font: "wingding.ttf"
