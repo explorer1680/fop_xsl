@@ -1,0 +1,4 @@
+to specify border color, style, etc
+you have to specify border-collapse="collapse"
+
+<fo:table border-collapse="collapse" ...>

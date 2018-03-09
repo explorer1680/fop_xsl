@@ -1,0 +1,5 @@
+<fo:block ...>
+    <fo:inline ...>
+        ...
+    </fo:inline>
+</fo:block>
