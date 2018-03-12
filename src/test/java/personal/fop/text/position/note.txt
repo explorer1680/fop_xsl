@@ -1,0 +1,11 @@
+to put text in middle of line, using:
+text-align
+
+to put text in middle of vertical, using:
+vertical-align
+for vertical-align, you can use value in:
+http://www.datypic.com/sc/fo11/a-vertical-align-1.html
+and also, you can use 40% as its value.
+
+to put text in middle of table(vertical):
+display-align
