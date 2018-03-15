@@ -1,0 +1,1 @@
+it seems that the kerning can be implements by "letter-spacing" property.
