@@ -16,3 +16,11 @@ call template:
 
 Note, "select" always try to parse the content as xPath.
 Using select="'abc'" to pass literal info.
+
+Please note, the <xsl:with-param> may can be used without "select":
+
+<xsl:call-template name="template_name">
+    <xsl:with-param name="param_name">
+        xxx
+    </xsl:with-param>
+</xsl:call-template>

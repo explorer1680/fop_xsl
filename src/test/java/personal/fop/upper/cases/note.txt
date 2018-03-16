@@ -1,1 +1,9 @@
 https://stackoverflow.com/questions/586231/how-can-i-convert-a-string-to-upper-or-lower-case-with-xslt
+
+example:
+<xsl:variable name="abc">
+    <i18n:text key="xxx"/>
+</xsl:variable>
+
+<xsl:value-of select="translate($abc, $smallcase, $uppercase)"/>
+
