@@ -3,3 +3,6 @@ www.renderx.com/tutorial.html
 list is not table, it is also a complex structure in fop.
 
 the bullet symbal is a special font: "wingding.ttf"
+
+how to change space between label and word.
+https://stackoverflow.com/questions/38266178/how-to-handle-indents-of-very-long-folist-item-labels
