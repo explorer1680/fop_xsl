@@ -1,0 +1,16 @@
+to print white space, you can use "&nbsp;", or you can use:
+
+<fo:block ...>
+    <xsl:value-of select=' '>
+</fo:block>
+
+if you want to print multiple space, following is not working:
+<fo:block ...>
+    <xsl:value-of select='       '>
+</fo:block>
+
+
+You have to using following property:
+<fo:block ... white-space="pre">
+    <xsl:value-of select=' '>
+</fo:block>
