@@ -1,0 +1,18 @@
+to get an empty row, following is not working:
+<fo:table-cell>
+    <fo:block>
+        <xsl:value-of select="' '"/>
+    </fo:block>
+</fo:table-cell>
+
+is not working.
+
+using:
+
+<fo:table-cell>
+    <fo:block>
+        <fo:leader />
+    </fo:block>
+</fo:table-cell>
+
+will work.
