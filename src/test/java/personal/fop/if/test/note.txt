@@ -8,3 +8,7 @@ But:
 will not do the job.
 you have to use:
 <xsl:if test="normalize-space(abc)='True'">...job...</xsl:if>
+
+
+another topic
+https://stackoverflow.com/questions/1703320/remove-excess-whitespace-from-within-a-string/17181283
