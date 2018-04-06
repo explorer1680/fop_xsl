@@ -6,3 +6,7 @@
     </xsl:for-each>
 
 https://www.w3schools.com/xml/xsl_for_each.asp
+
+
+how to select the first item from the list:
+https://stackoverflow.com/questions/1498819/how-can-i-select-the-first-element-using-xslt
