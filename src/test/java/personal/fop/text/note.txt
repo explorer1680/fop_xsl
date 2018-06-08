@@ -1,0 +1,4 @@
+<xsl:text> is the tag can show the test.
+it is same as <xsl:value-of>
+
+for the white space, it is also same. you need "pre" to preserve the extra space.

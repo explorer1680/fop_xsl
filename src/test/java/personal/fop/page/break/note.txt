@@ -6,7 +6,13 @@ example:
 
 I think you can use <block> to group multiple paragraph together, and use page-break-inside=avoid to avoid page break between them.
 
-and, you can also use keep-with-previous on following blocks to group multiple block together.
+and, you can also use keep-with-previous, keep-with-next on following blocks to group multiple block together.
+The properties apply to the within-line, within-column, and within-page components.
+keep-with-previous.within-page="always"
+but, sometimes, this property is not working.
 
 it seems if you put too many together, you will lost some of them.
 http://apache-fop.1065347.n5.nabble.com/keep-with-previous-and-page-break-td8454.html
+
+https://www.ibm.com/developerworks/xml/library/x-tippgbk/index.html?ca=drs
+
