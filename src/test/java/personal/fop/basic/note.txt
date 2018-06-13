@@ -7,3 +7,16 @@ it will have following error:
 
 you can reuse:
 ClassPathResource("personal/fop/template.xsl").getFile()
+
+Please note:
+In employees.xml, there is a part:
+
+    <abcdefg>
+        I am here!
+    </abcdefg>
+
+and in template.xsl, the entry point is:
+<xsl:template match="/root/employees">
+so, that part is listed in the fop_test_run.fo by the built-in rule of xsl.
+but, the pdf is display as expected.
+
