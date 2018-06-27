@@ -19,16 +19,6 @@ if-else:
 space in xsl:
 <xsl:text>&#160;</xsl:text>
 
-number function is to format number:
-https://www.w3schools.com/xml/ref_xsl_el_number.asp
-
-count function is to count the total occurrence of the node.
-<xsl:value-of select="count(fund_country_allocation_list/long_position/list-item/percentage)"/>
-
-sum function is to calculate the total number inside of the node.
-<xsl:value-of select="sum(fund_country_allocation_list/long_position/list-item/percentage)"/>
-
-
 xsl:template example:
 https://stackoverflow.com/questions/4486869/can-one-give-me-the-example-for-mode-of-template-in-xsl
 
