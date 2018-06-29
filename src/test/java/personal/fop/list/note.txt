@@ -6,3 +6,6 @@ the bullet symbal is a special font: "wingding.ttf"
 
 how to change space between label and word.
 https://stackoverflow.com/questions/38266178/how-to-handle-indents-of-very-long-folist-item-labels
+
+count number of node that not empty(match certain value) and test if it is greater than 0:
+test="count(../../node[text() != '']) &gt; 0"
