@@ -1,0 +1,7 @@
+count number of node that not empty(match certain value) and test if it is greater than 0:
+test="count(../../node[text() != '']) &gt; 0"
+
+select node by its child's value:
+https://stackoverflow.com/questions/9683054/xpath-to-select-element-based-on-childs-child-value
+
+./book[./author/name = 'John']
