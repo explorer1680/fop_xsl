@@ -3,3 +3,6 @@
         ...
     </fo:inline>
 </fo:block>
+
+add underline to block
+<fo:block  text-decoration="underline">
