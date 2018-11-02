@@ -1,0 +1,9 @@
+https://www.antennahouse.com/antenna1/comprehensive-xsl-fo-tutorials-and-samples-collection/
+
+https://www.antennahouse.com/antenna1/wp-content/uploads/2018/02/footnote-1.pdf
+
+<fo:static-content flowname="xsl-footnote-separator"> is used for define breaker in footnote.
+you don't need to define "xsl-footnote-separator" in <fo:simple-page-master> and footnote is placed on bottom of page automatically.
+
+you have to define <fo:inline> inside of <fo:footnote>, but the content can be empty.
+I think the order in the footnote is the order you define them in the file, not the first number in the note.

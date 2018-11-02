@@ -5,3 +5,7 @@ select node by its child's value:
 https://stackoverflow.com/questions/9683054/xpath-to-select-element-based-on-childs-child-value
 
 ./book[./author/name = 'John']
+
+test if the list contain an element equal to 'ABC'
+<xsl:if test="fees_options/list-item[.='ABC']">
+here, the '[]' called predicate.
