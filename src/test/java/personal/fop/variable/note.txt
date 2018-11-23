@@ -4,3 +4,31 @@ define a variable:
 
 to use this variable:
 <... select="$var"/>
+
+it seems there are 2 way to define variable:
+
+1. just as example above define variable with 'name' and 'select'.
+
+2:
+
+<xsl:variable name="possible_values">
+    <anyName anyItem1="anything2" anyItem2="anything2"...>anyValue1</anyName>
+    <anyName anyItem1="anything3" anyItem4="anything2"...>anyValue2</anyName>
+    ...
+</xsl:variable>
+
+<xsl:variable name="final_var" select="xalan:nodeset($possible_values)">
+
+to use this variable:
+
+column-width="${final_var/anyName[@anyItem1=someValue2 and anyItem2=someValue2]}"
+
+note, in above, 'possible_values' is just a xml structure.
+xalan:nodeset convert it to an list.
+final_var/anyName[@anyItem1=someValue2 and anyItem2=someValue2] is xPath syntax to select note.
+
+https://stackoverflow.com/questions/21321056/xslt-how-to-get-a-value-from-a-certain-element-within-a-variable
+above is another way to convert xml structure to list without xalan;nodeset
+
+https://stackoverflow.com/questions/14602884/declaring-a-xsl-variable-and-assigning-value-to-it
+above is the example to define value as attribute instead of node.
