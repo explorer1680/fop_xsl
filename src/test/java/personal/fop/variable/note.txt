@@ -9,22 +9,29 @@ it seems there are 2 way to define variable:
 
 1. just as example above define variable with 'name' and 'select'.
 
-2:
+2: another way to define variable:
 
+step1:
 <xsl:variable name="possible_values">
     <anyName anyItem1="anything2" anyItem2="anything2"...>anyValue1</anyName>
     <anyName anyItem1="anything3" anyItem4="anything2"...>anyValue2</anyName>
     ...
 </xsl:variable>
 
+above, the syntax is same as <xsl:variable name="abc">something</xsl:variable>
+now, the 'possible_values' is the whole xml list.
+
+
+step2:
+
 <xsl:variable name="final_var" select="xalan:nodeset($possible_values)">
+xalan:nodeset convert it to an nodeset.
+now, the 'final_var' become nodeset that easy to select.
 
 to use this variable:
 
 column-width="${final_var/anyName[@anyItem1=someValue2 and anyItem2=someValue2]}"
 
-note, in above, 'possible_values' is just a xml structure.
-xalan:nodeset convert it to an list.
 final_var/anyName[@anyItem1=someValue2 and anyItem2=someValue2] is xPath syntax to select note.
 
 https://stackoverflow.com/questions/21321056/xslt-how-to-get-a-value-from-a-certain-element-within-a-variable
