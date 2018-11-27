@@ -1,0 +1,22 @@
+position() is a function.
+https://developer.mozilla.org/en-US/docs/Web/XPath/Functions/position
+
+The position function returns a number equal to the context position from the expression evaluation context.
+Note that a node's position in a context is not zero-based. The first node has a position of 1.
+The context is determined by the rest of the path.
+
+position() related with context. Please make sure which context it refer to.
+
+you can define variable in your context, then used in later in another context.
+
+<xsl:for-each select="list-item"> //begin a position context.
+    <xsl:variable name="pos" select="position()"/>
+    <fo:table-row> //I think it begin a new position context.
+        <fo:table-cell>//I think it also begin a new position context.
+        <fo:block background-color="{$legendColorValue[@id=$pos]}"> //use the position defined above
+        ...
+
+
+
+note() and current() are also functions.
+
