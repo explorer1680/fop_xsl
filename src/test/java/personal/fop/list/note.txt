@@ -9,3 +9,8 @@ https://stackoverflow.com/questions/38266178/how-to-handle-indents-of-very-long-
 
 count number of node that not empty(match certain value) and test if it is greater than 0:
 test="count(../../node[text() != '']) &gt; 0"
+
+get the index of node in list:
+position()
+
+https://stackoverflow.com/questions/26649249/how-to-get-index-of-node-in-number-of-nodes-with-special-attribute-value
