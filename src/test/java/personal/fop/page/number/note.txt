@@ -14,3 +14,15 @@ define:
 Page <fo:page-number/> of
     <fo:page-number-citation ref-id="TheVeryLastPage"/>
 </fo:block>
+
+
+https://stackoverflow.com/questions/32601444/page-numbers-in-xsl-fo-document
+if you don't want to count pdf from beginnig of the page, you can use: 
+
+initial-page-number="1" on fo:page-sequence
+
+Please note, it also affect:
+<fo:page-number-citation ref-id="TheVeryLastPage" />
+"TheVeryLastPage" is just the id you want to reference, it defined as:
+<fo:block id="TheVeryLastPage" />
+it can be any names, and you can define multiple id in the page.
