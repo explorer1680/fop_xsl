@@ -20,3 +20,4 @@ and in template.xsl, the entry point is:
 so, that part is listed in the fop_test_run.fo by the built-in rule of xsl.
 but, the pdf is display as expected.
 
+https://www.antennahouse.com/comprehensive-xsl-fo-tutorials-and-samples-collection/
