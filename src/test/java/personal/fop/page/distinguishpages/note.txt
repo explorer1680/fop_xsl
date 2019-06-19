@@ -1,0 +1,23 @@
+To have first page has different footer is easy, you use a new fo:page-sequence at beginning of the file.
+
+To have last page has different footer is difficult, how to use xsl to check if it is last page?
+
+There is a solution from FOP.
+
+				<fo:page-sequence-master master-name="MainPage">
+                    <fo:repeatable-page-master-alternatives>
+                        <fo:conditional-page-master-reference
+                                master-reference="FirstPage" page-position="first"/>
+                        <fo:conditional-page-master-reference
+                                master-reference="OtherPages" page-position="rest"/>
+                        <fo:conditional-page-master-reference
+                                master-reference="LastPage" page-position="last"/>
+                    </fo:repeatable-page-master-alternatives>
+                </fo:page-sequence-master>
+                
+In the last page's layout, you don't define footer, then the normal footer will not show in the last page, then you define your footer in the normal content.
+
+Note, you have to define "first" in this section, otherwise, it will not work.
+
+Furthermore, you can use this to have different layout for odd and even pages.
+
