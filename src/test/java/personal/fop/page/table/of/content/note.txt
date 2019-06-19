@@ -22,3 +22,6 @@ to add link to it:
         <fo:page-number-citation ref-id="page_id"/>
     </fo:basic-link>
 </fo:block>
+
+what means text-align-last="justify"? it may similar to CSS:
+https://developer.mozilla.org/en-US/docs/Web/CSS/text-align-last
