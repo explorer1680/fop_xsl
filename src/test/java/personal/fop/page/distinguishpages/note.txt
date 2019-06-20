@@ -21,3 +21,23 @@ Note, you have to define "first" in this section, otherwise, it will not work.
 
 Furthermore, you can use this to have different layout for odd and even pages.
 
+Please note, we can define footer for last page.
+
+in order to have different footer in the last page, you should define different "region-name" for the "region-after" of LastPage:
+
+                <fo:simple-page-master master-name="LastPage"
+                                       page-width="11in" page-height="8.5in" margin-top="0.5in"
+                                       margin-bottom="0.2in" margin-left="0.2in" margin-right="0.2in">
+                    <fo:region-body margin-top="0.6in" margin-bottom="5.1in"
+                                    margin-left="0.0in" margin-right="0.0in"/>
+                    <fo:region-before region-name="header" extent="1.05in"
+                                      display-align="before"/>
+                    <fo:region-after region-name="last-page-footer" extent="4in"
+                                     display-align="before" />
+                </fo:simple-page-master>
+
+and define:
+        <fo:static-content flow-name="last-page-footer">
+            ...
+        </fo:static-content>
+for this footer.
