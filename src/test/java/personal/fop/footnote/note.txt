@@ -7,3 +7,7 @@ you don't need to define "xsl-footnote-separator" in <fo:simple-page-master> and
 
 you have to define <fo:inline> inside of <fo:footnote>, but the content can be empty.
 I think the order in the footnote is the order you define them in the file, not the first number in the note.
+
+Please note, in order to have the whole footnote group together, you need to add:
+page-break-inside="avoid"
+to the <block> inside of <fo:footnote-body>, not on the <fo:footnote-body> tag.
