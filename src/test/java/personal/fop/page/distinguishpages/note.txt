@@ -21,6 +21,11 @@ Note, you have to define "first" in this section, otherwise, it will not work.
 
 Furthermore, you can use this to have different layout for odd and even pages.
 
+all possible conditions:
+http://w3schools.sinsixx.com/xslfo/obj_conditional-page-master-reference.asp.htm
+all possible value for page-position:
+http://www.datypic.com/sc/fo11/a-page-position-1.html
+
 Please note, we can define footer for last page.
 
 in order to have different footer in the last page, you should define different "region-name" for the "region-after" of LastPage:

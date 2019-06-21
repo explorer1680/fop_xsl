@@ -1,0 +1,29 @@
+<marker> and <retrieve-marker> are used to add extra content to header and footer in specific page.
+
+you define <marker> in specific page:
+                        <fo:marker marker-class-name="extra-word">
+                            <xsl:call-template name="extra-footer-message"/>
+                        </fo:marker>
+
+and in header or footer's <fo:static-content>
+you define to use them:
+
+ <fo:retrieve-marker retrieve-class-name="extra-word" retrieve-position="first-starting-within-page" retrieve-boundary="page"/>
+
+Please note, the marker-class-name in marker and retrieve-class-name in retrieve-marker are corresponding each other.
+
+the retrieve-position="first-starting-within-page" and retrieve-boundary="page" are important, but what is there meanings? I don't know.
+
+http://www.datypic.com/sc/fo11/a-retrieve-position-1.html
+https://www.w3.org/TR/2001/REC-xsl-20011015/slice7.html
+according to above doc, the:
+retrieve-boundary="page", "page-sequence", "document"
+"page-sequence" corresponding to </fo:page-sequence>
+
+https://stackoverflow.com/questions/28366990/xsl-fo-different-header-footer-depending-on-page-position/28382375
+
+https://www.antennahouse.com/comprehensive-xsl-fo-tutorials-and-samples-collection/#table
+Thumb index (<fo:marker>, <fo:retrieve-marker>)
+
+
+the meaning of retrieve-position="first-starting-within-page" or other value is not clear.
