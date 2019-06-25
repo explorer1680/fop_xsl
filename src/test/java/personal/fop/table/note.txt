@@ -1,0 +1,4 @@
+do not include margin-left or margin-right in table, it seems that it will be inherited by all table element.
+
+try this:
+https://stackoverflow.com/questions/11228008/how-to-set-margin-left-without-it-being-inherited-by-child-elements/34704059
