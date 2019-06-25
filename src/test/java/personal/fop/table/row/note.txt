@@ -1,0 +1,3 @@
+to specify height of row, using:
+height attribute of table-row
+please note, for table-header, there is no height attribute, you need add a table-row to it even if it is only 1 row of header.
