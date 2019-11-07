@@ -6,3 +6,6 @@
 
 add underline to block
 <fo:block  text-decoration="underline">
+
+supperscript
+<fo:inline baseline-shift="30%" font-size="8pt">
